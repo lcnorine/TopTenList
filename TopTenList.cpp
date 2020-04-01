@@ -19,3 +19,18 @@ Hyperlink TopTenList::get(int index)
 {
   return _list.at(index);
 }
+
+void display_forward()
+{
+  for (int i = 0; i < _list.size(); i++)
+  {
+    std::cout << _list.at(i);
+  }
+}
+void display_backward()
+{
+  for (int i = _list.size() - 1; i >= 0 ; i++)
+  {
+    std::cout << _list.at(i);
+  }
+}
